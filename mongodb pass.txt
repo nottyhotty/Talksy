@@ -1,0 +1,6 @@
+pass word= s2UcpTR3n3IWbONV
+
+
+netstat -ano | findstr :5000
+
+taskkill /PID <PID_NUMBER> /F
