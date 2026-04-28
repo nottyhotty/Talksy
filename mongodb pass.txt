@@ -4,3 +4,9 @@ pass word= s2UcpTR3n3IWbONV
 netstat -ano | findstr :5000
 
 taskkill /PID <PID_NUMBER> /F
+
+{
+"fullName":"Gautam",
+"email":"gautambanjara2005@gmail.com",
+"password":"123456"
+}
