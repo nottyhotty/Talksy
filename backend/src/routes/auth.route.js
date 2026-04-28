@@ -7,11 +7,10 @@ const router = express.Router();
 
 router.use(arcjetProtection);
 
-router.post("/test", arcjetProtection, (req, res) => {
-    res.status(200).json({message: "Testroute"});
-});
+router.use(arcjetProtection);
+
 router.post("/signup", signup);
-router.post("/login", arcjetProtection, login);
+router.post("/login", login);
 router.post("/logout", logout);
 
 router.put("/update-profile", protectRoute, updateProfile);
