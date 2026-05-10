@@ -6,6 +6,13 @@ import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 import { connectDB } from "./lib/db.js";
 import { app, server } from "./lib/socket.js";
+import cors from "cors";
+
+app.use(cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+}));
+
 
 dotenv.config();
 
