@@ -33,3 +33,14 @@
   @apply px-4 py-2 inline-block bg-cyan-500/10 rounded-lg text-cyan-400
   hover:text-cyan-500 text-sm transition-colors;
 }
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px #1e293b inset !important;
+}
+
+.message-input {
+  color: white !important;
+ -webkit-text-fill-color: white !important;
+  background-color: rgba(30, 41, 59, 0.5) !important;
+}

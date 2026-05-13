@@ -73,7 +73,8 @@ function MessageInput() {
             setText(e.target.value);
             isSoundEnabled && playRandomKeyStrokeSound();
           }}
-          className="flex-1 bg-slate-800/50 border border-slate-700/50 rounded-lg py-2 px-4"
+          style={{ color: "white", WebkitTextFillColor: "white" }}  {/* ✅ fix */}
+          className="flex-1 bg-slate-800/50 border border-slate-700/50 rounded-lg py-2 px-4 placeholder:text-slate-400 caret-white"
           placeholder="Type your message..."
         />
 
